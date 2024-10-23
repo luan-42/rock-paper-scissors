@@ -18,7 +18,10 @@ function playGame() {
         let choice;
         const options = ["rock", "paper", "scissors"];
         do {
-            choice = window.prompt("rock, paper or scissors?", "").toLowerCase();
+            choice = window.prompt("rock, paper or scissors?", "");
+            if (choice !== null) {
+                choice = choice.toLowerCase();
+            }
         } while (!options.includes(choice))
         return choice.toLowerCase();
     }
