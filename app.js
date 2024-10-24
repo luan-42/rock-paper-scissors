@@ -23,7 +23,7 @@ function playGame() {
                 choice = choice.toLowerCase();
             }
         } while (!options.includes(choice))
-        return choice.toLowerCase();
+        return choice;
     }
     
     function playRound(humanChoice, computerChoice) {
