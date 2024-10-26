@@ -57,7 +57,7 @@ options.addEventListener("click", (e) => {
     playRound(e.target.alt, getComputerChoice());
     
     if (humanScore == 5 || computerScore == 5) {
-        window.alert(`${humanScore == 5 ? "You" : "Computer"} wins! Start again?`);
+        window.alert(`${humanScore == 5 ? "You" : "Computer"} wins! Play again?`);
         newGame();
     };
 })
