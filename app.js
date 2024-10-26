@@ -42,7 +42,7 @@ function playRound(humanChoice, computerChoice) {
         case "paper scissors":
             computerScore++;
             result.textContent = "You lose!";
-            round.textContent = `${humanChoice} loses to${computerChoice}.`;
+            round.textContent = `${humanChoice} loses to ${computerChoice}.`;
             break;
         default:
             result.textContent = "Draw!";
