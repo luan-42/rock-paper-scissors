@@ -54,7 +54,7 @@ function playRound(humanChoice, computerChoice) {
 
 const options = document.querySelector("#options");
 options.addEventListener("click", (e) => {
-    playRound(e.target.alt, getComputerChoice());
+    playRound(e.target.className, getComputerChoice());
     
     if (humanScore == 5 || computerScore == 5) {
         window.alert(`${humanScore == 5 ? "You" : "Computer"} wins! Play again?`);
